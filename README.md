@@ -23,7 +23,7 @@ The model comprises around 110 million parameters and is a bidirectional transfo
 The primary focus of this project revolves around the masked language modeling objective.
 
 [BERT Model Architecture](images/)
-<p align="center"><img width="50%" src="Figures/Bert-architecture.png"/></p>
+<p align="center"><img width="70%" src="Figures/Bert-architecture.png"/></p>
 
 ### Training Phase
 1. **Dataset Preparation**: The model is trained on <a href="https://osf.io/tyue9/">'bert-base-uncased'</a> a diverse labeled dataset</a> encompassing both genuine and computer-generated reviews.
@@ -33,7 +33,7 @@ The primary focus of this project revolves around the masked language modeling o
 ### Dataset Creation
 - **Embedding Reviews**: Reviews are embedded into a 768-dimensional dense vector space using the Sentence-Transformers library on <a href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">'sentence-transformers/all-mpnet-base-v2'</a>.
 - **Cosine Similarity-Based Selection**: A new dataset is created by selecting 10,000 reviews from the Amazon review dataset based on cosine similarity to the validation set.
-  <p align="center"><img width="50%" src="Figures/Figure-1.png"/></p>
+  <p align="center"><img width="30%" src="Figures/Figure-1.png"/></p>
 
 ### Model Stacking
 - **Model 2 to Model 3 Transition**: The pre-trained Model 2 acts as a starting point for Model 3, leveraging the knowledge and features learned during previous training.
@@ -55,9 +55,9 @@ Install the following required libraries:
 
 ## Prediction
 
-Before you want to predict a review to detect, you should download 2 models: <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true">Model 1</a> and <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true"> Model 3</a> to predict a review
+To predict and detect whether a review is genuine or computer-generated, you need to download and use the following models: <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true">Model 1</a> and <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true"> Model 3</a>.
 
-```predict-Model3.py``` or ```predict-Model4.py``` is provided to extract concepts from a direct text (a sequence of words).
-
+- Model Download: Ensure you have downloaded both Model 1 and Model 3 before proceeding.
+- Prediction Scripts: Use ```predict-Model3.py``` or ```predict-Model4.py```to extract and analyze concepts from a review text. These scripts will process the sequence of words and generate predictions based on the trained models.
 
 
