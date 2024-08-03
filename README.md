@@ -32,7 +32,7 @@ The primary focus of this project revolves around the masked language modeling o
 4. **Fine-Tuning**: Iterative parameter adjustments further enhance the model’s discernment capabilities - Model 1.
 
 ### Dataset Creation
-- **Embedding Reviews**: Reviews are embedded into a 768-dimensional dense vector space using the Sentence-Transformers library on <a href="[https://huggingface.co/google-bert/bert-base-uncased](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)">'sentence-transformers/all-mpnet-base-v2'</a>.
+- **Embedding Reviews**: Reviews are embedded into a 768-dimensional dense vector space using the Sentence-Transformers library on <a href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">'sentence-transformers/all-mpnet-base-v2'</a>.
 - **Cosine Similarity-Based Selection**: A new dataset is created by selecting 10,000 reviews from the Amazon review dataset based on cosine similarity to the validation set.
 
 ### Model Stacking
@@ -53,5 +53,5 @@ Install the following required libraries:
 
 ## Prediction
 
-Before you want to predict a review to detect, you should download 2 models: 
+Before you want to predict a review to detect, you should download 2 models: <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true">Model 1</a> and <a href="https://drive-google-com.translate.goog/drive/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=wapp&_x_tr_hist=true"> Model 3</a> to run t
 
