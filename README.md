@@ -1,4 +1,4 @@
-# Deep Learning to Detect Computer-Generated Reviews in E-Commerce
+# <a href="https://drive.google.com/drive/u/0/folders/1GvHMPye_TPYTGTCafHhL_uL1XA0wUcR-">Deep Learning to Detect Computer-Generated Reviews in E-Commerce</a>
 This project addresses the pervasive issue of fraudulent reviews in online shopping platforms, which undermine consumer trust and hinder informed decision-making. Leveraging advanced deep learning techniques and utilizing the BERT model from the Hugging Face Transformers library, we aim to discern between genuine human-authored reviews and computer-generated ones. By employing PyTorch for model development and evaluation, we seek to enhance the reliability of online product reviews, ultimately contributing to the creation of more resilient and trustworthy e-commerce platforms. Our goal is to empower consumers with the ability to distinguish between authentic and fake reviews, thereby fostering confidence and integrity in the digital marketplace. 
 ## Table of Contents
 - [Features](#features)
