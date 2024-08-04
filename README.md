@@ -4,8 +4,7 @@ This project addresses the pervasive issue of fraudulent reviews in online shopp
 - [Features](#features)
 - [Models](#models)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
+- [Prediction](#prediction)
 
 ## Features
 - Detects fraudulent reviews using advanced sentiment analysis.
@@ -26,13 +25,13 @@ The primary focus of this project revolves around the masked language modeling o
 <p align="center"><img width="50%" src="Figures/Bert-architecture.png"/></p>
 
 ### Training Phase
-1. **Dataset Preparation**: The model is trained on <a href="https://osf.io/tyue9/">'bert-base-uncased'</a> a diverse labeled dataset</a> encompassing both genuine and computer-generated reviews.
+1. **Dataset Preparation**: The model is trained on <a href="https://osf.io/tyue9/">a diverse labeled dataset</a> encompassing both genuine and computer-generated reviews.
 2. **Supervised Learning**: Through supervised learning, the model hones its understanding of semantic analytics and patterns inherent to authentic human sentiments.
 4. **Fine-Tuning**: Iterative parameter adjustments further enhance the model’s discernment capabilities - Model 1.
 
 ### Dataset Creation
 - **Embedding Reviews**: Reviews are embedded into a 768-dimensional dense vector space using the Sentence-Transformers library on <a href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">'sentence-transformers/all-mpnet-base-v2'</a>.
-- **Cosine Similarity-Based Selection**: A new dataset is created by selecting 10,000 reviews from the Amazon review dataset based on cosine similarity to the validation set.
+- **Cosine Similarity-Based Selection**:  <a href="https://github.com/hanchau94/Fake-Reviews-Detection/blob/main/Dataset/Model_2_dataset.csv"> The new dataset</a> is created by selecting 10,000 reviews from the Amazon review dataset based on cosine similarity to the validation set.
   <p align="center"><img width="70%" src="Figures/Figure-1.png"/></p>
 
 ### Model Stacking
